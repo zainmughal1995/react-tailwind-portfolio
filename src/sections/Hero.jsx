@@ -62,25 +62,26 @@ const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                WebGIS Developer
+                Geospatial Web Applications Developer
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4 ">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting <span className="text-primary glow-text">digital</span>
-                <br />
-                experiences with <br />
+                Crafting{" "}
+                <span className="text-primary glow-text">
+                  interactive maps{" "}
+                </span>
+                and{" "}
                 <span className="font-serif italic font-normal text-white">
-                  precision.
+                  geospatial applications.
                 </span>
               </h1>
 
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Zain - A WebGIS Developer specialising in React, Django,
-                NodeJS, Mapbox, PostGIS. I build Scaleable, Performant Web
-                Applications that users love.
+                Hi, I'm Zain – I create scalable, high-performance geospatial
+                web applications that bring maps and data to life.
               </p>
             </div>
             {/* CTAs */}

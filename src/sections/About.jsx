@@ -6,25 +6,25 @@ const highlights = [
     icon: Code2,
     title: "Clean Code",
     description:
-      "Writing maintainable, scaleable code that stands the test of time.",
+      "Writing maintainable, scalable code for robust WebGIS applications.",
   },
   {
     icon: Rocket,
-    title: "Clean Code",
+    title: "Performance",
     description:
-      "Writing maintainable, scaleable code that stands the test of time.",
+      "Building fast and responsive geospatial applications that users love.",
   },
   {
     icon: Users,
-    title: "Clean Code",
+    title: "User-Centric",
     description:
-      "Writing maintainable, scaleable code that stands the test of time.",
+      "Designing intuitive interfaces for seamless interaction with spatial data.",
   },
   {
     icon: Lightbulb,
-    title: "Clean Code",
+    title: "Innovation",
     description:
-      "Writing maintainable, scaleable code that stands the test of time.",
+      "Applying creative solutions to complex geospatial challenges.",
   },
 ];
 
@@ -55,13 +55,14 @@ const About = () => {
                 I am a Web GIS Developer with 5+ years of experience crafting
                 digital web mapping applications{" "}
               </p>
-              <p>I specialise in React Node Django and other tech</p>
+              <p>I specialise in React, Node, Django and other tech</p>
               <p>When I am not coding, I am exploring new tech</p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground ">
-                My mission is to create best Web GIS Apps
+                I build high-performance WebGIS applications that turn
+                geospatial data into actionable insights.
               </p>
             </div>
           </div>
