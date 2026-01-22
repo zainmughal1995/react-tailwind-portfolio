@@ -6,7 +6,7 @@ const projects = [
     title: "WebGIS 1",
     description: "This is a description",
     image: "/projects/p1.png",
-    tags: ["React", "Django"],
+    tags: ["React"],
     link: "#",
     github: "#",
   },
@@ -14,7 +14,7 @@ const projects = [
     title: "WebGIS 2",
     description: "This is a description",
     image: "/projects/p2.png",
-    tags: ["React", "Typescript"],
+    tags: ["Typescript", "Django"],
     link: "#",
     github: "#",
   },
@@ -22,7 +22,7 @@ const projects = [
     title: "WebGIS 3",
     description: "This is a description",
     image: "/projects/p1.png",
-    tags: ["React"],
+    tags: ["React", "Django"],
     link: "#",
     github: "#",
   },
@@ -30,7 +30,7 @@ const projects = [
     title: "WebGIS 4",
     description: "This is a description",
     image: "/projects/p2.png",
-    tags: ["Django", "TailwindCSS"],
+    tags: ["React", "Tailwind", "Django"],
     link: "#",
     github: "#",
   },
@@ -40,11 +40,18 @@ const allTags = [...new Set(projects.flatMap((p) => p.tags))];
 
 const Project = () => {
   const [selectedTag, setSelectedTag] = useState("All");
+  const [showAll, setShowAll] = useState(false);
 
   const filteredProjects =
     selectedTag === "All"
       ? projects
       : projects.filter((p) => p.tags.includes(selectedTag));
+
+  // Limit for default view
+  const defaultCount = 2;
+  const displayedProjects = showAll
+    ? filteredProjects
+    : filteredProjects.slice(0, defaultCount);
 
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
@@ -74,7 +81,10 @@ const Project = () => {
             <ul className="space-y-2">
               <li
                 className={`cursor-pointer px-4 py-2 rounded-lg ${selectedTag === "All" ? "bg-primary text-white" : "bg-surface text-muted-foreground"} hover:bg-primary hover:text-white transition`}
-                onClick={() => setSelectedTag("All")}
+                onClick={() => {
+                  setSelectedTag("All");
+                  setShowAll(false);
+                }}
               >
                 All
               </li>
@@ -82,7 +92,10 @@ const Project = () => {
                 <li
                   key={idx}
                   className={`cursor-pointer px-4 py-2 rounded-lg ${selectedTag === tag ? "bg-primary text-white" : "bg-surface text-muted-foreground"} hover:bg-primary hover:text-white transition`}
-                  onClick={() => setSelectedTag(tag)}
+                  onClick={() => {
+                    setSelectedTag(tag);
+                    setShowAll(false);
+                  }}
                 >
                   {tag}
                 </li>
@@ -91,11 +104,16 @@ const Project = () => {
           </div>
 
           {/* Projects Grid */}
-          <div className="md:w-3/4 grid md:grid-cols-2 gap-8">
-            {filteredProjects.map((project, idx) => (
+          <div
+            className="md:w-3/4 grid gap-8"
+            style={{
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            }}
+          >
+            {displayedProjects.map((project, idx) => (
               <div
                 key={idx}
-                className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
+                className="group glass rounded-2xl overflow-hidden animate-fade-in"
                 style={{ animationDelay: `${(idx + 1) * 100}ms` }}
               >
                 <div className="relative overflow-hidden aspect-video">
@@ -121,7 +139,7 @@ const Project = () => {
                   </div>
                 </div>
                 <div className="p-6 space-y-4">
-                  <div className="flex items-start justify-between ">
+                  <div className="flex items-start justify-between">
                     <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                       {project.title}
                     </h3>
@@ -145,6 +163,18 @@ const Project = () => {
             ))}
           </div>
         </div>
+
+        {/* Show More Button */}
+        {filteredProjects.length > defaultCount && !showAll && (
+          <div className="text-center mt-8">
+            <button
+              onClick={() => setShowAll(true)}
+              className="px-6 py-3 bg-primary text-black rounded-lg hover:bg-primary/80 transition"
+            >
+              Show More
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
