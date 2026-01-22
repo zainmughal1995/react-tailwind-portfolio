@@ -1,6 +1,12 @@
 import React from "react";
 import Button from "@/components/Button";
-import { ArrowRight, Github, Linkedin, Instagram } from "lucide-react";
+import {
+  ArrowRight,
+  Github,
+  Linkedin,
+  Instagram,
+  Download,
+} from "lucide-react";
 
 const skills = [
   "React",
@@ -79,9 +85,11 @@ const Hero = () => {
             </div>
             {/* CTAs */}
             <div className="animate-fade-in animation-delay-200">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
+              <a href="/pdf/cv.pdf" download>
+                <Button size="lg">
+                  Download CV <Download />
+                </Button>
+              </a>
             </div>
 
             {/* Social Media */}
