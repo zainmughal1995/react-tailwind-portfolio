@@ -52,17 +52,18 @@ const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200 ">
               <p>
-                I am a Web GIS Developer with 5+ years of experience crafting
-                digital web mapping applications{" "}
+                Bridging maps and the web through 5+ years of experience
+                building high-performance, interactive geospatial applications.
+                Focused on crafting intuitive spatial interfaces using React,
+                Node.js, and Django, with an emphasis on clean architecture and
+                efficient data visualization. Driven by curiosity, constantly
+                exploring new technologies shaping the future of web and GIS.
               </p>
-              <p>I specialise in React, Node, Django and other tech</p>
-              <p>When I am not coding, I am exploring new tech</p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
-              <p className="text-lg font-medium italic text-foreground ">
-                I build high-performance WebGIS applications that turn
-                geospatial data into actionable insights.
+              <p className="text-lg font-medium italic text-foreground text-center ">
+                Where maps meet code, insight begins.
               </p>
             </div>
           </div>

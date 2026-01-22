@@ -16,10 +16,10 @@ const navLinks = [
     label: "Projects",
   },
 
-  {
-    href: "#testimonial",
-    label: "Testimonial",
-  },
+  // {
+  //   href: "#testimonial",
+  //   label: "Testimonial",
+  // },
   {
     href: "#contact",
     label: "Contact",

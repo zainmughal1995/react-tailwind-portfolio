@@ -2,27 +2,41 @@ import React from "react";
 
 const experiences = [
   {
-    period: "2022 - Present",
-    role: "Senior GIS Developer",
-    company: "Tech Innovator Inc",
-    description: "Leading forward GIS Dev Team",
-    technologies: ["React", "NodeJS", "Django"],
+    period: "2024 - 2025",
+    role: "Geospatial Engineer",
+    company: "Farmdar Pvt. Ltd.",
+    description: "",
+    technologies: [
+      "Python",
+      "Geopandas",
+      "Airflow",
+      "Shapely",
+      "Rasterio",
+      "Machine Learning",
+      "Git / GitHub",
+    ],
     current: true,
   },
   {
-    period: "2022 - Present",
-    role: "Senior GIS Developer",
-    company: "Tech Innovator Inc",
-    description: "Leading forward GIS Dev Team",
-    technologies: ["React", "NodeJS", "Django"],
+    period: "2022 - 2024",
+    role: "Geographic Information Systems (GIS) Analyst",
+    company: "Magma Systems / Zoneomics Pvt. Ltd.",
+    description: "",
+    technologies: [
+      "QGIS",
+      "QGIS Plugin Development",
+      "Python",
+      "Automation",
+      "Geopandas",
+    ],
     current: false,
   },
   {
-    period: "2022 - Present",
-    role: "Senior GIS Developer",
-    company: "Tech Innovator Inc",
-    description: "Leading forward GIS Dev Team",
-    technologies: ["React", "NodeJS", "Django"],
+    period: "2019 - 2021",
+    role: "Geographic Information Systems (GIS) Developer",
+    company: "Kaspar Consulting Services Pvt. Ltd.",
+    description: "",
+    technologies: ["QGIS", "QGIS Plugin Development", "Telecom Data"],
     current: false,
   },
 ];
@@ -46,8 +60,7 @@ const Experience = () => {
           </h2>
 
           <p className="text-muted-foreground animated-fade-in animation-delay-200">
-            A timeline of my professional growth, from curious beginner to
-            senior engineer leading teams and building products at scale.
+            A timeline of my professional growth...
           </p>
         </div>
 

@@ -9,13 +9,26 @@ import {
 } from "lucide-react";
 
 const skills = [
+  "JavaScript",
+  "TypeScript",
   "React",
-  "NodeJS",
+  "Node.js",
+  "Express",
+  "Python",
   "Django",
-  "Mapbox",
-  "Typescript",
+  "GeoDjango",
+  "REST APIs",
   "PostgreSQL",
   "PostGIS",
+  "Mapbox",
+  "Mapbox GL JS",
+  "Leaflet",
+  "OpenLayers",
+  "GeoJSON",
+  "Vector Tiles",
+  "GDAL",
+  "QGIS",
+  "ArcGIS",
   "Redis",
   "Docker",
   "AWS",
@@ -97,9 +110,15 @@ const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground ">Follow: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Instagram, href: "#" },
+                { icon: Github, href: "https://github.com/zainmughal1995" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/zain-%F0%9F%8C%8D-07b91a204/",
+                },
+                {
+                  icon: Instagram,
+                  href: "https://www.instagram.com/zainulabdin.dev/",
+                },
               ].map((social, idx) => (
                 <a
                   key={idx}
@@ -126,9 +145,7 @@ const Hero = () => {
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                    <span className="text-lg font-medium">
-                      Available for work
-                    </span>
+                    <span className="text-lg font-medium">Available</span>
                   </div>
                 </div>
                 {/* Stats Badge */}

@@ -3,34 +3,10 @@ import React, { useState } from "react";
 
 const projects = [
   {
-    title: "WebGIS 1",
-    description: "This is a description",
+    title: "Interactive Mapping Application",
+    description: "Demo App",
     image: "/projects/p1.png",
-    tags: ["React"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "WebGIS 2",
-    description: "This is a description",
-    image: "/projects/p2.png",
-    tags: ["Typescript", "Django"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "WebGIS 3",
-    description: "This is a description",
-    image: "/projects/p1.png",
-    tags: ["React", "Django"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "WebGIS 4",
-    description: "This is a description",
-    image: "/projects/p2.png",
-    tags: ["React", "Tailwind", "Django"],
+    tags: ["React", "Tailwind", "Django", "JWT", "Mapbox"],
     link: "#",
     github: "#",
   },
